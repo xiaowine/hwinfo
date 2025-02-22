@@ -52,19 +52,19 @@ int main(int argc, char** argv) {
     // fmt::print("{}\n", cpu.currentTemperature_Celsius());
   }
 
-  hwinfo::OS os;
-  // clang-format off
-  fmt::print("----------------------------------- OS ------------------------------------\n"
-             "{:<20} {}\n"
-             "{:<20} {}\n"
-             "{:<20} {}\n"
-             "{:<20} {}\n"
-             "{:<20} {}\n",
-             "Operating System:", os.name(),
-             "version:", os.version(),
-             "kernel:", os.kernel(),
-             "architecture:", os.is32bit() ? "32 bit" : "64 bit",
-             "endianess:", os.isLittleEndian() ? "little endian" : "big endian");
+  // hwinfo::OS os;
+  // // clang-format off
+  // fmt::print("----------------------------------- OS ------------------------------------\n"
+  //            "{:<20} {}\n"
+  //            "{:<20} {}\n"
+  //            "{:<20} {}\n"
+  //            "{:<20} {}\n"
+  //            "{:<20} {}\n",
+  //            "Operating System:", os.name(),
+  //            "version:", os.version(),
+  //            "kernel:", os.kernel(),
+  //            "architecture:", os.is32bit() ? "32 bit" : "64 bit",
+  //            "endianess:", os.isLittleEndian() ? "little endian" : "big endian");
   // clang-format on
 
   auto gpus = hwinfo::getAllGPUs();
